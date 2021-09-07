@@ -211,3 +211,5 @@ This is how you run the tool locally to test how it works:
 ```bash
 $ ./bin/pdd --help
 ```
+
+Disclaimer: this repository was originaly cloned from https://github.com/cqfn/pdd
