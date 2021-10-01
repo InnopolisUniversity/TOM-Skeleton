@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_10_131156) do
+ActiveRecord::Schema.define(version: 2021_10_01_115155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,15 @@ ActiveRecord::Schema.define(version: 2021_09_10_131156) do
     t.string "name"
     t.string "description"
     t.string "isactive"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tom_radar_activations", force: :cascade do |t|
+    t.string "source"
+    t.string "issuetitle"
+    t.string "issuebody"
+    t.string "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,12 +1,8 @@
-# Check out all text files in UNIX format, with LF as end of line
-# Don't change this file. If you have any ideas about it, please
-# submit a separate issue about it and we'll discuss.
+# See https://git-scm.com/docs/gitattributes for more about git attribute files.
 
-* text=auto eol=lf
-*.java ident
-*.xml ident
-*.jpg binary
-*.png binary
-*.pdf binary
-*.woff binary
-*.ico binary
+# Mark the database schema as having been generated.
+db/schema.rb linguist-generated
+
+
+# Mark any vendored files as having been vendored.
+vendor/* linguist-vendored
